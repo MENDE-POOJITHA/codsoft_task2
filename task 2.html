@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Quiz Platform</h1>
+
+    <div id="quiz-creator">
+        <h2>Create Quiz</h2>
+        <input type="text" id="question" placeholder="Enter question"><br>
+        <input type="text" id="option1" placeholder="Option 1"><br>
+        <input type="text" id="option2" placeholder="Option 2"><br>
+        <input type="text" id="option3" placeholder="Option 3"><br>
+        <input type="text" id="option4" placeholder="Option 4"><br>
+        <select id="correct-answer">
+            <option value="0">Option 1</option>
+            <option value="1">Option 2</option>
+            <option value="2">Option 3</option>
+            <option value="3">Option 4</option>
+        </select><br>
+        <button onclick="addQuestion()">Add Question</button>
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quiz-taker" style="display:none;">
+        <h2>Take Quiz</h2>
+        <div id="quiz-container"></div>
+        <button onclick="submitQuiz()">Submit Quiz</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
